@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  bd_mysql:
+    container_name: bd_mysql
+    image: mysql:latest
+    ports:
+      - "8000:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456789
+      MYSQL_DATABASE: prisma
+    networks:
+      - redapi
+
+  api:
+    container_name: apirun
+    image: api
+    ports:
+      - "8001:3000"
+    networks:
+      - redapi
+
+networks:
+  redapi:
+    name: redapi
+    driver: bridge

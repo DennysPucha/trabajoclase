@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api/rols
+
+###
+POST http://localhost:3000/api/rols
+Content-Type: application/json
+
+{
+    "name": "administrator 2",
+    "description": "Administrator of all operations",
+    "state": true
+}
+
+###
+PUT http://localhost:3000/api/rols/4045469d-3c6b-4d4a-b006-0f35093f3422
+Content-Type: application/json
+
+{
+    "name": "administrator",
+    "description": "Administrator of all operations",
+    "state": true
+}
+
+###
+GET http://localhost:3000/api/rols/6dd8da92-c885-4248-8868-771514208ac6
+
+###
+DELETE  http://localhost:3000/api/rols/629e9988-06ac-48b5-85ca-b5ff5f1f53e6

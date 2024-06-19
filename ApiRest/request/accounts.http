@@ -1,0 +1,39 @@
+###
+GET http://localhost:3000/api/accounts/userAccounts
+
+###
+POST http://localhost:3000/api/accounts/userAccounts
+Content-Type: application/json
+
+{
+    "name": "Dennys Alexander",
+    "lastname": "Pucha Carrera",
+    "phone": "123456789",
+    "email": "dennys.pucha@unl.edu.ec",
+    "password": "123456"
+}
+
+###     
+PUT http://localhost:3000/api/accounts/userAccounts/4ed83921-5452-4050-8191-c722c5b886be
+Content-Type: application/json
+
+{
+    "name": "Dennys2 Actualizado",
+    "lastname": "Pucha Carrera",
+    "phone": "123456789",   
+    "email": "dennysuser3@pipi.com",
+    "lastpassword": "contrasena1234567",
+    "password": "contrasena123456"
+}
+
+###
+GET http://localhost:3000/api/accounts/userAccounts/7bed77ee-5edf-4c6a-bf23-5eefd08ae6ed
+
+###
+DELETE  http://localhost:3000/api/accounts/userAccounts/305099a9-e8a9-404e-a390-a65c7029d6ae
+Content-Type: application/json
+
+{
+    "email": "dennysalexp@pipi.com",
+    "password": "123456"
+}
